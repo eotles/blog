@@ -8,6 +8,7 @@ If you have ideas about my ideas feel free to reach out to me on twitter ([@eotl
 
 Cheers, <br />
 Erkin  <br />
+[Erkin's Website](https://eotles.github.io)
 
 ## Posts
 * [Hello, World!](/posts/20220107_hello_world/readme.md)
