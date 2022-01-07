@@ -16,7 +16,7 @@ As I come across interesting topics that pertain to medicine or engineering I’
 
 Ultimately this is a project for myself: 1) to help strengthen my written communication skills and 2) allow me to explore a broader space of ideas. If you happen to get something out of it too in the meantime that’s a wonderful byproduct.
 
-If you have ideas about my ideas feel free to reach out to me on twitter ([@eotles](https://twitter.com/eotles)) or write me an email ([eotles@gmail.com]).
+If you have ideas about my ideas feel free to reach out to me on twitter ([@eotles](https://twitter.com/eotles)) or write me an email ([eotles@gmail.com](eotles@gmail.com)).
 
 Cheers, <br \>
 Erkin  <br \>
