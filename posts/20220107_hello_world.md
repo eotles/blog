@@ -3,6 +3,7 @@ Erkin Ötleş
 January 7th 2022
 
 Topics: Introduction, Blog
+[PDF Version](hello_world.pdf)
 
 
 Hello, World!
