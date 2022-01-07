@@ -1,9 +1,8 @@
 # Hello, World!
-Erkin Ötleş
-January 7th 2022
+Erkin Ötleş <br />
+January 7th 2022 
 
-Topics: Introduction, Blog
-
+Topics: Introduction, Blog <br />
 [PDF Version](hello_world.pdf)
 
 
