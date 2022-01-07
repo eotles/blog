@@ -6,7 +6,6 @@ For a little background: I am a Medical Scientist Training Program Fellow at the
 
 ## Posts
 * [Hello, World!](/posts/20220107_hello_world/readme.md)
-* [Post](test_post.md)
 
 
 ## Reference
