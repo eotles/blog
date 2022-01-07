@@ -11,7 +11,7 @@ Erkin  <br />
 
 
 ## Posts
-* [Hello, World!](/posts/20220107_hello_world/readme.md)
+* [Hello, World! (01/07/2022)](/posts/20220107_hello_world/readme.md)
 
 
 ## Reference
