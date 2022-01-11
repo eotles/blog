@@ -8,8 +8,8 @@
     <form name="myForm" action="/action_page.php" method="post">
         Green Letters   : <input type="text" name="green_char" input value="*****"> input green letters, use '*' to denote non-green characters. Example: ***ry <br \>
         Yellow Letters: <input type="text" name="yellow_char"> input characters directly, no spaces or commas needed. Example: qu <br \>
-        Greyed Letters: <input type="text" name="banned_char"> input characters directly, no spaces or commas needed. Example: v <br \>
-            <input type="button" id="button" value="Click Me" onclick="validateForm()"/>
+        Greyed Letters: <input type="text" name="banned_char"> input characters directly, no spaces or commas needed. Example: v <br \><br \>
+            <input type="button" id="button" value="Submit" onclick="validateForm()"/>
     </form>
     
     <p id="demo"></p>
@@ -186,8 +186,10 @@
               results_msg = "Looks like there aren't any valid results. Check your entries. <br \>";
           }
           
+          var info = '<br \><br \> Want more info? <a href="https://eotles.github.io/blog/posts/20220110_solving_wordle/solving_wordle.pdf">Here ya go!</a>'
           
-          document.getElementById("demo").innerHTML = user_msg + results + results_msg;
+          
+          document.getElementById("demo").innerHTML = user_msg + results + results_msg + info;
         }
     </script>
 </body>
