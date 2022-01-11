@@ -11,9 +11,11 @@ Erkin  <br />
 
 
 ## Posts
-* [Test for Wordle](/posts/20220110_solving_wordle/test.html)
 * [Hello, World! (01/07/2022)](/posts/20220107_hello_world/readme.md)
 
+
+## Fun Things
+* [Wordle Solver](/posts/20220110_solving_wordle/gameplay_refined_list.html)
 
 ## Reference
 [Markdown](markdown.md)
