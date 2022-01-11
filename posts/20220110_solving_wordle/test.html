@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+img {
+    position: absolute;
+    left: 100px;
+    top: 150px;
+}
+
+</style>
+	<script type="text/javascript">
+		var students = new Array("John", "Ann", "Aaron", "Edwin", "Elizabeth");
+		document.write("<b>Using for loops </b><br />");
+		for (i=0;i<students.length;i++)
+		{
+		document.write(students[i] + "<br />");
+		}
+        var xLoc = 0;
+            //document.getElementById("healthy1").style.left = "0px";
+        while(true) {
+            document.getElementById("healthy1").style.display='none';
+            document.getElementById("healthy1").style.left = xLoc +"px";
+        }
+	</script>
+<img id="healthy1" src="healthy.gif" width="191" height="122">
+<img id="sick1" src="sick.gif" width="191" height="122">
+</body>
+</html>
+
