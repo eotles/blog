@@ -55,11 +55,32 @@
             return setA.size === setB.size && all(isIn(setB), setA);
         }
         
+        function sanitize(input) {
+            var sanitized = input.toLowerCase().replace("[a-z,\*]", "");
+            console.log(sanitized);
+            return sanitized;
+        }
+        
         
         function validateForm() {
           var green_char = document.forms["myForm"]["green_char"].value;
           var yellow_char = document.forms["myForm"]["yellow_char"].value;
           var banned_char = document.forms["myForm"]["banned_char"].value;
+          
+          var user_msg = "";
+          
+          green_char = sanitize(green_char);
+          yellow_char = sanitize(yellow_char);
+          yellow_char = sanitize(yellow_char);
+          banned_char = sanitize(banned_char)
+          
+          if (green_char.length != 5) {
+              user_msg += "Need to have 5 valid characters (a-z or *) in the green letters box. <br \>";
+          }
+          
+          if (yellow_char.length > 5) {
+              user_msg += "Can't have more than 5 yellow letters. <br \>";
+          }
           
           yellow_char = new Set(yellow_char.split(""));
           banned_char = new Set(banned_char.split(""));
@@ -118,7 +139,9 @@
           console.log(ct_2_words)
           
           var selected_c = []
-          var results = ""
+          var results = "";
+          var rank_no = 0;
+          
           for (const i of Array(Math.min(10, possible_solutions.length)).keys()) {
               
               for (const c of selected_c) {
@@ -149,7 +172,7 @@
                   selected_c.push(c)
               }
               
-              var rank_no = i+1
+              rank_no = i+1
               
               results += "rank: " + rank_no + "<br \>"
               results += "characters: " + argmax_ct_word_count + "<br \>"
@@ -158,9 +181,15 @@
               
           }
           
+          var results_msg = "";
+          if (rank_no < 1) {
+              results_msg = "Looks like there aren't any valid results. Check your entries. <br \>";
+          }
           
-          document.getElementById("demo").innerHTML = results;
+          
+          document.getElementById("demo").innerHTML = user_msg + results + results_msg;
         }
     </script>
 </body>
 </html>
+
