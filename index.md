@@ -11,6 +11,7 @@ Erkin  <br />
 
 
 ## Posts
+* [Solving Wordle (01/10/2022)](/posts/20220110_solving_wordle/readme.md)
 * [Hello, World! (01/07/2022)](/posts/20220107_hello_world/readme.md)
 
 
