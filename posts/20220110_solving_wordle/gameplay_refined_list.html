@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <!-- Made by Erkin Ötleş and Arel Ötleş -->
-    
+
 <body style="font-family:'Courier'">
     
     <form name="myForm" action="/action_page.php" method="post">
@@ -80,7 +80,7 @@
           for (const word of solution_words) {
               if (word.search(regex_search_string)==0) {
                   var set_word = new Set(word.split(""));
-                  if (yellow_char.size==0 || intersection(set_word, yellow_char) == yellow_char) {
+                  if (yellow_char.size==0 || eqSet(yellow_char, intersection(yellow_char, set_word)))  {
                       possible_solutions.push(word);
                   }
               }
