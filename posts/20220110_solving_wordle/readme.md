@@ -48,7 +48,7 @@ In order to do this I reduce words down to character strings which are just list
 
 We then search through all words and calculate their total word coverage. This is done by summing up the counts for every character in the word. We then select the word with the highest amount of other word coverage. In order to find words to be used in subsequent rounds we can remove the characters already covered by previously selected words and repeats the previous step.
 
-Code can be found in the [first_word_common_characters.ipynb] notebook.
+Code can be found in the [first_word_common_characters.ipynb](first_word_common_characters.ipynb) notebook.
 
 First Word - Right Character in Right Position
 This one is a pretty straightforward extension of the First Word - Common Characters approach that has an added constraint, which is position must be tracked along with the characters.
@@ -57,7 +57,7 @@ To do this we count a character-position tuples. For every word we loop through 
 
 We then loop through every word and calculate their total word coverage. This is done by breaking the word into character-position tuples and summing up the counts of the observed character-positions.
 
-Code can be found in the [first_word_right_character_in_right_position.ipynb] notebook.
+Code can be found in the [first_word_right_character_in_right_position.ipynb](first_word_right_character_in_right_position.ipynb) notebook.
 
 Both the First Word strategies can be converted from counts to probabilities. I haven’t done this yet, but maybe I’ll update this post in the future to have that information.
 
@@ -79,7 +79,7 @@ Generate Regex: the users need to provide 3 things before a guess 1) a string wi
 
 Get possible solutions: after building the regex search string we can loop through the list of solution words and filter all the words that don’t meet the regex search pattern. We can additionally remove any words that do not use characters from the yellow characters list. Finally, we then Rank Order Solutions by finding each words coverage using the approach described in Common Characters above. This produces a list of words ranked by their likelihood of producing yellow characters on the remaining possible words.
 
-Code can be found in the [gameplay_refine_list_common_characters.ipynb notebook]. [There’s also a website with this solver implemented](gameplay_refined_list.html).
+Code can be found in the [gameplay_refine_list_common_characters.ipynb notebook](gameplay_refine_list_common_characters.ipynb). [There’s also a website with this solver implemented](gameplay_refined_list.html).
 
 Gameplay - Reinforcement Learning
 This approach is based on tabular Q-learning. [2, 5] Its a little bit complicated and I’m unsure the training procedure produced ideal results. But I’ll provide a brief overview.
