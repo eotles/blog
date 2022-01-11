@@ -3,7 +3,7 @@
 January 10th 2022 
 
 Topics: Introduction, Blog <br />
-[PDF Version](solving_wordle.pdf)
+[PDF Version](solving_wordle.pdf) <br />
 [Online Solver](gameplay_refined_list.html)
 
 Topics: Wordle, Decision Science, Operations Research, Optimization, Games, Artificial Intelligence, Machine Learning
