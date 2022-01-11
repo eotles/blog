@@ -38,10 +38,10 @@ As I mentioned above, solving wordle is subjective. You might not like my approa
 
 
 
-Appendix
+## Appendix
 This contains some technical descriptions of the approaches described above.
 
-First Word - Common Characters
+### First Word - Common Characters
 This one is pretty simple. I am essentially trying to find the word that has the most unique characters in common with other words (this is a yellow match). 
 
 In order to do this I reduce words down to character strings which are just lists of unique characters that the words are made up of. So for an example, the word “savvy” becomes the string list: a,s,v,y. We then use the chapter strings to count the number of words represented by a character. So using the character string from above the characters a, s, v, and y would all have their counts incremented by 1. These counts represent the number of words covered by a character (word coverage).
@@ -65,7 +65,7 @@ The Gameplay strategies are a little more complicated than the First Word strate
 
 
 
-Gameplay - Refine List + Common Characters
+### Gameplay - Refine List + Common Characters
 This approach is reminds me of an AI TA I had. He would always say “AI is just search”. Which is true. This approach is pretty much searching over the word list with some filtering and using some distributional knowledge. It was surprised at how easily it came together and how effective it is. As a side note, it was probably the easiest application of regex that I’ve had in a while.
 
 There are three components to this approach:
@@ -79,7 +79,7 @@ Generate Regex: the users need to provide 3 things before a guess 1) a string wi
 
 Get possible solutions: after building the regex search string we can loop through the list of solution words and filter all the words that don’t meet the regex search pattern. We can additionally remove any words that do not use characters from the yellow characters list. Finally, we then Rank Order Solutions by finding each words coverage using the approach described in Common Characters above. This produces a list of words ranked by their likelihood of producing yellow characters on the remaining possible words.
 
-Code can be found in the [gameplay_refine_list_common_characters.ipynb notebook](gameplay_refine_list_common_characters.ipynb). [There’s also a website with this solver implemented](gameplay_refined_list.html).
+Code can be found in the [gameplay_refine_list_common_characters.ipynb](gameplay_refine_list_common_characters.ipynb) notebook. [There’s also a website with this solver implemented](gameplay_refined_list.html).
 
 Gameplay - Reinforcement Learning
 This approach is based on tabular Q-learning. [2, 5] Its a little bit complicated and I’m unsure the training procedure produced ideal results. But I’ll provide a brief overview.
@@ -94,7 +94,9 @@ I then coded up the wordle game and used tabular Q-learning to learn the value o
 
 I think this also might be solvable using dynamic programming as we know the winning states. These are terminal and then I think you can work backwards to assign values to the intermediary states. It’s been almost a decade since I took my dynamic programming class, so I need a bit of a refresher before I dive into it.
 
-As you can see, there are a lot of interesting questions that arise from formulating this task as an RL problem. I will probably come back to this and explore it further in the future.Bibliography
+As you can see, there are a lot of interesting questions that arise from formulating this task as an RL problem. I will probably come back to this and explore it further in the future.
+
+## Bibliography
 1.	Wordle - A daily word game. 2022; Available from: https://www.powerlanguage.co.uk/wordle/.
 2.	Q-Learning - An introduction through a simple table based implementation with learning rate, discount factor and exploration - gotensor. 2019.
 3.	Solve Wordle. 2022; Available from: https://www.solvewordle.com/.
