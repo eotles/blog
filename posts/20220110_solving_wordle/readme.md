@@ -1,6 +1,9 @@
 # Solving Wordle
-Erkin Ötleş
-January 10th, 2022
+[Erkin Ötleş](https://eotles.github.io) <br />
+January 10th 2022 
+
+Topics: Introduction, Blog <br />
+[PDF Version](solving_wordle.pdf)
 
 Topics: Wordle, Decision Science, Operations Research, Optimization, Games, Artificial Intelligence, Machine Learning
 
