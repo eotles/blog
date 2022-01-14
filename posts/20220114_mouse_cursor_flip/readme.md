@@ -11,7 +11,7 @@ Recently I came across some interesting behavior in Microsoft Word. While scroll
 <!--- 
 word_mouse_cursor_flip_only.mov
 -->
-https://github.com/eotles/blog/blob/978e396063edc05d8fc6bf58aa601ed2822870e8/posts/20220114_mouse_cursor_flip/word_mouse_cursor_flip_only.mov
+https://user-images.githubusercontent.com/6284187/149540340-c1fb54ee-dc7d-4a50-8fa3-8007e27cbf96.mov
 
 
 The pointer starts out as a normal arrow pointer then changes to a horizontal I beam pointer once the Word application is brought into focus by clicking. As the pointer travels left the pointer switches to a flipped arrow pointer. Traveling to the right we see the horizontal I beam pointer and eventually the normally expected classic arrow pointer. What the #$@!%?
@@ -33,7 +33,8 @@ I think this is a good parting thought, it is especially salient for those of us
 
 
 Erkin  <br />
-[Go ÖN Home](../../index.md)
+[Go ÖN Home](../../index.md) <br /><br />
+
 
 Note: the discrepancy in verbiage between the title and the text. Mouse cursor and pointer seem to be interchangeable when referring to the “pointy thing”. [4] I use pointer through the text as that’s what Apple’s human interface guidelines call it. [1] But the codebase refers to NSCursor, so ¯\_(ツ)_/¯.
 
@@ -42,7 +43,10 @@ MacOS: 12.0.1 (21A559)
 Word 16.56 (21121100)
 Pages: 11.2 (7032.0.145)
 
-Note 3: it is annoying that you can’t copy the version number from the About Word window of Microsoft Word.Bibliography
+Note 3: it is annoying that you can’t copy the version number from the About Word window of Microsoft Word.
+
+
+## Bibliography
 1.	Apple. Human Interface Guidelines: Mouse and Trackpad. 2022; Available from: https://developer.apple.com/design/human-interface-guidelines/macos/user-interaction/mouse-and-trackpad/.
 2.	@StackUX. When to use reversed/mirror arrow cursor? 2022; Available from: https://ux.stackexchange.com/questions/35435/when-to-use-reversed-mirror-arrow-cursor.
 3.	hickeys. Mouse and Pointers - Win32 apps. 2022; Available from: https://docs.microsoft.com/en-us/windows/win32/uxguide/inter-mouse.
