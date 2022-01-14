@@ -10,7 +10,6 @@ Let’s talk about Wordle. [1] You, like me, might have been drawn into this gam
 
 <p align="center">
  <img width="742" alt="20220110_wordle_cheadle" src="https://user-images.githubusercontent.com/6284187/149555509-aea14cbb-5b02-45c4-b7d3-3d6c450dd4fb.png"> <br />
-
  A valiant wordle attempt by J.B. Cheadle (January 10th 2022)
 </p>
 
