@@ -16,6 +16,7 @@ https://user-images.githubusercontent.com/6284187/149540340-c1fb54ee-dc7d-4a50-8
 -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1KH5ac92csk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br />
 
 
 The pointer starts out as a normal arrow pointer then changes to a horizontal I beam pointer once the Word application is brought into focus by clicking. As the pointer travels left the pointer switches to a flipped arrow pointer. Traveling to the right we see the horizontal I beam pointer and eventually the normally expected classic arrow pointer. What the #$@!%?
@@ -30,6 +31,7 @@ https://user-images.githubusercontent.com/6284187/149541375-fc3011b6-5d8d-43b7-9
 -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2izioZDl7BQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br />
 
 
 Once you know about this you might consider it helpful. But really?! It is a buried feature that leads to two outcomes: 1) it doesn’t get noticed by the majority of users or 2) when it does get noticed it causes confusion (🙋🏾‍♂️). Apparently, other MS Office applications do similar things when the pointer goes leftward. [2] However, the Microsoft pointer UI documentation has no mention of why or when a flipped arrow pointer is supposed to be employed. [3]
