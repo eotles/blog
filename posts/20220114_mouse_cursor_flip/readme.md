@@ -25,8 +25,11 @@ It took me a while to figure this out, because googling “flipped reversed poin
 
 <!--- 
 word_mouse_cursor_selection_only.mov
--->
+
 https://user-images.githubusercontent.com/6284187/149541375-fc3011b6-5d8d-43b7-9c37-f49b43db7ca3.mov
+-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2izioZDl7BQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 Once you know about this you might consider it helpful. But really?! It is a buried feature that leads to two outcomes: 1) it doesn’t get noticed by the majority of users or 2) when it does get noticed it causes confusion (🙋🏾‍♂️). Apparently, other MS Office applications do similar things when the pointer goes leftward. [2] However, the Microsoft pointer UI documentation has no mention of why or when a flipped arrow pointer is supposed to be employed. [3]
