@@ -2,37 +2,60 @@
 [Erkin Ötleş](https://eotles.github.io) <br />
 January 10th 2022 
 
-Topics: Introduction, Blog <br />
+Topics: Wordle, Decision Science, Operations Research, Optimization, Games, Artificial Intelligence, Machine Learning <br />
 [PDF Version](solving_wordle.pdf) <br />
 [Online Solver](gameplay_refined_list.html)
 
-Topics: Wordle, Decision Science, Operations Research, Optimization, Games, Artificial Intelligence, Machine Learning
-
 Let’s talk about Wordle. [1] You, like me, might have been drawn into this game recently, courtesy of those yellow and green squares on twitter. The rules are simple, you get 6 attempts to guess the 5 letter word. After every attempt you get feedback in the form of the colored squares around your letters. Grey means this character isn’t used at all. Yellow means that the character is used, but in a different position. Finally, green means you nailed the character to (one of) the right position(s). Here’s an example of a played game:
+
+ <img width="359" alt="20220110_wordle" src="https://user-images.githubusercontent.com/6284187/149547716-54872019-49ed-42df-9493-692ed60b8b01.png">
+ A valiant wordle attempt by J.B. Cheadle (January 10th 2022)
+
 It’s pretty fun to play, although wracking your brain for 5 letter words can be annoying, especially since you are not allowed to guess words that aren’t real words (e.g., you can’t use AEIOU). Once I got the hang of the game’s mechanics my natural inclination was to not enjoy the once daily word guessing diversion, but was to find a way to “solve wordle”.
 
 Now, what does it mean to “solve wordle”? Maybe you would like to start with a really good guess? Maybe you would like to guarantee that you win the game (i.e., guess the right word by your sixth try)? Or perhaps, you’d like to win the game and get the most amount of greens or yellow on the way? “Solving” is a subjective and probably depends on your preferences. 
 
 Due to this subjectivity I think there’s couple valid ways to tackle wordle. If you have a strong preference for one type of solution you might be able to express that directly and then solve the game in order to get the optimal way to play. I’m going to try to avoid the O-word because: 1) I don’t know what you’d like to optimize for and 2) these approaches below don’t solve for the true optimal solution (they are heuristics).
 
-The solution strategies I’ve explored thus far can be broken down into two major categories. The first set of strategies are trying to find really good first words to start with (First Word) and the second set are finding strategies that can be used to pick good words throughout the course of the game in response to responses received from guesses (Gameplay).
+The solution strategies I’ve explored thus far can be broken down into two major categories. The first set of strategies are trying to find really good first words to start with (**First Word**) and the second set are finding strategies that can be used to pick good words throughout the course of the game in response to responses received from guesses (**Gameplay**).
 
-Let’s start with the First Words strategies: there are two first word strategies that can be employed based on how you’d like to start your game.
-First Word - Common Characters: ideal if you’d like to start your game using words that have the most common characters with all the solution words. Think of this as trying to maximize the number of yellow characters that you get on the first try. 
-First Word - Right Character in Right Position: ideal if you’d like to start the game using words that have the highest likelihood of having the right characters in the right position. This would yield the most number of green characters. 
+Let’s start with the **First Words** strategies: there are two first word strategies that can be employed based on how you’d like to start your game.
+First Word - Common Characters: ideal if you’d like to start your game using words that have the most common characters with all the solution words. Think of this as trying to maximize the number of yellow characters that you get on the first try.
+1. **First Word - Right Character in Right Position**: ideal if you’d like to start the game using words that have the highest likelihood of having the right characters in the right position. This would yield the most number of green characters.
 
-Note on solution word vs. usable words. Wordle has two sets of words, solution words and other words. Other words are never the correct answer but can be used as a guess. There’s a chance that other words can be used to get a lot of yellows, despite never being the correct answer. So I created a list of usable words that combined the solution words and the other words. Notice that the First Word - Common Characters strategy has two lists. That’s because there are other words like “oater” that are more likely to produce yellows than the best solution word “later”. This isn’t the case for the First Word - Right Character in Right Position, as it produces the same results for both sets of words.
+
+  Rank |    Solution Words    |     Usable Words     
+ ----- | -------------------- | -------------------- 
+  1st  | later, alter, alert  | oater, orate, roate  
+  2nd  | sonic, scion         | lysin                
+  2nd  | pudgy                | chump :)         
+ 
+2. **First Word - Right Character in Right Position**: ideal if you’d like to start the game using words that have the highest likelihood of having the right characters in the right position. This would yield the most number of green characters.
+
+| Rank |    Solution (& Usable) Words    |
+| ---- | ------------------------------- |
+| 1st | slate                           |
+| 2nd | crony                           |
+| 2nd | build                           |
+
+Note on solution word vs. usable words. Wordle has two sets of words, solution words and other words. Other words are never the correct answer but can be used as a guess. There’s a chance that other words can be used to get a lot of yellows, despite never being the correct answer. So I created a list of usable words that combined the solution words and the other words. Notice that the **First Word - Common Characters** strategy has two lists. That’s because there are other words like “oater” that are more likely to produce yellows than the best solution word “later”. This isn’t the case for the **First Word - Right Character in Right Position**, as it produces the same results for both sets of words.
 
 You might also observe that there are several sets of words in terms of 1st, 2nd, and 3rd. If you wanted you could use these strategies over several rounds to build up your knowledge. However, these strategies don’t take into account the feedback that you get from the game. So there may be better ways to play the game that take into account what kind of results you get after you put in a guess.
 
-These strategies are the Gameplay strategies. I’ll present two potential approaches that use knowledge as it is collected.
-Gameplay - Refine List + Common Characters: this one works by sifting through the remaining words that are feasible (e.g., don’t use grey characters and have green characters in the right spot) and then uses the Common Characters approach to rank the potential word choices that remain.
-Gameplay - Reinforcement Learning: this one works by learning what is the best word to guess given what you have guessed in the past. [2] It does this learning by playing the Wordle many times (e.g., millions) and then collecting a reward based on how it does (+1 point for winning and 0 points for losing). Over repeated plays of the game we can learn what guesses might lead to winning based on the current state of the game.
+These strategies are the **Gameplay** strategies. I’ll present two potential approaches that use knowledge as it is collected.
+1. **Gameplay - Refine List + Common Characters**: this one works by sifting through the remaining words that are feasible (e.g., don’t use grey characters and have green characters in the right spot) and then uses the Common Characters approach to rank the potential word choices that remain.
+2. **Gameplay - Reinforcement Learning**: this one works by learning what is the best word to guess given what you have guessed in the past. [2] It does this learning by playing the Wordle many times (e.g., millions) and then collecting a reward based on how it does (+1 point for winning and 0 points for losing). Over repeated plays of the game we can learn what guesses might lead to winning based on the current state of the game.
 
-Here is an example of the Gameplay - Refine List + Common Characters strategy in action based on the Wordle from January 10th 2022.
+Here is an example of the **Gameplay - Refine List + Common Characters** strategy in action based on the Wordle from January 10th 2022.
+
+  Guess # | Green Characters | Grey Characters | Guess | Result     
+ -------- | -----------------| --------------- | ----- | -----
+  1       | \*\*\*\*\*       |                 | alert |   <img width="173" alt="20220110_solver_results_guess_1" src="https://user-images.githubusercontent.com/6284187/149551178-25d2aef0-b429-4c55-a2cb-d82bea355761.png">   
+  2       | \*\*\er\*        | a, l, t         | fiery |<img width="174" alt="20220110_solver_results_guess_2" src="https://user-images.githubusercontent.com/6284187/149551758-65c270ab-0d41-4430-a977-801c4c6af98d.png">
+  3       | \*\*\ery*        | a, f, i, l, t   | query |<img width="173" alt="20220110_solver_results_guess_3" src="https://user-images.githubusercontent.com/6284187/149551954-55a3d143-6361-4ca7-9437-2cf6f2456ce5.png">
 
 
-Here you can see that after every guess we get to update the green characters and the grey characters that we know about. For example after round 1, we know that the word must be **er* (where * represent wildcards) and must not contain the characters: a, l (el) or t. I use regular expressions to search through the list of words, the search expression is really simple, it just replaces * in the green character string with tokens for the remaining viable characters (the set of alphabet characters minus the grey characters).
+Here you can see that after every guess we get to update the green characters and the grey characters that we know about. For example after round 1, we know that the word must be \*\*er* (where * represent wildcards) and must not contain the characters: a, l (el) or t. I use regular expressions to search through the list of words, the search expression is really simple, it just replaces * in the green character string with tokens for the remaining viable characters (the set of alphabet characters minus the grey characters).
 
 The reinforcement learning based approach would operate in a similar manner for a user. However, the mechanics under the hood are a bit more complicated. If you are interested in how it (or any of the other strategies) work please see the appendix.
 
@@ -65,7 +88,7 @@ Code can be found in the [first_word_right_character_in_right_position.ipynb](fi
 
 Both the First Word strategies can be converted from counts to probabilities. I haven’t done this yet, but maybe I’ll update this post in the future to have that information.
 
-The Gameplay strategies are a little more complicated than the First Word strategies because they need to be able to incorporate the state of the game into the suggestion for the next move.
+The **Gameplay** strategies are a little more complicated than the **First Word** strategies because they need to be able to incorporate the state of the game into the suggestion for the next move.
 
 
 
