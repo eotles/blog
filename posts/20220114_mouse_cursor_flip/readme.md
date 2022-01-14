@@ -9,11 +9,13 @@ Topics: User Interfaces & User Experience, Human Factor Engineering, Healthcare 
 Recently I came across some interesting behavior in Microsoft Word. While scrolling through a document I noticed that my pointer had flipped. Instead of seeing the classic arrow pointer (pointing to the upper-left) the pointer had flipped horizontally (arrow pointing to the upper-right). [1] Jiggling the pointer on and off the Word application caused the arrow pointer to flip back-and-forth. A video highlighting this behavior is embedded below.
 
 <!--- 
+video on blog:
 word_mouse_cursor_flip_only.mov
--->
+video on github readme upload (not shown on pages)
 https://user-images.githubusercontent.com/6284187/149540340-c1fb54ee-dc7d-4a50-8fa3-8007e27cbf96.mov
+-->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vv4uSRpBJjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1KH5ac92csk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 The pointer starts out as a normal arrow pointer then changes to a horizontal I beam pointer once the Word application is brought into focus by clicking. As the pointer travels left the pointer switches to a flipped arrow pointer. Traveling to the right we see the horizontal I beam pointer and eventually the normally expected classic arrow pointer. What the #$@!%?
