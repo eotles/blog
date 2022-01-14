@@ -8,7 +8,9 @@ Topics: Wordle, Decision Science, Operations Research, Optimization, Games, Arti
 
 Let’s talk about Wordle. [1] You, like me, might have been drawn into this game recently, courtesy of those yellow and green squares on twitter. The rules are simple, you get 6 attempts to guess the 5 letter word. After every attempt you get feedback in the form of the colored squares around your letters. Grey means this character isn’t used at all. Yellow means that the character is used, but in a different position. Finally, green means you nailed the character to (one of) the right position(s). Here’s an example of a played game:
 
- <img width="359" alt="20220110_wordle" src="https://user-images.githubusercontent.com/6284187/149547716-54872019-49ed-42df-9493-692ed60b8b01.png">
+<p align="center">
+ <img width="359" alt="20220110_wordle" src="https://user-images.githubusercontent.com/6284187/149547716-54872019-49ed-42df-9493-692ed60b8b01.png"> <br />
+</p>
  A valiant wordle attempt by J.B. Cheadle (January 10th 2022)
 
 It’s pretty fun to play, although wracking your brain for 5 letter words can be annoying, especially since you are not allowed to guess words that aren’t real words (e.g., you can’t use AEIOU). Once I got the hang of the game’s mechanics my natural inclination was to not enjoy the once daily word guessing diversion, but was to find a way to “solve wordle”.
@@ -22,21 +24,20 @@ The solution strategies I’ve explored thus far can be broken down into two maj
 Let’s start with the **First Words** strategies: there are two first word strategies that can be employed based on how you’d like to start your game.
 First Word - Common Characters: ideal if you’d like to start your game using words that have the most common characters with all the solution words. Think of this as trying to maximize the number of yellow characters that you get on the first try.
 1. **First Word - Right Character in Right Position**: ideal if you’d like to start the game using words that have the highest likelihood of having the right characters in the right position. This would yield the most number of green characters.
-
-
-  Rank |    Solution Words    |     Usable Words     
- ----- | -------------------- | -------------------- 
-  1st  | later, alter, alert  | oater, orate, roate  
-  2nd  | sonic, scion         | lysin                
-  2nd  | pudgy                | chump :)         
- 
+    
+    | Rank |    Solution Words    |     Usable Words     
+    | ---- | -------------------- | -------------------- 
+    | 1st  | later, alter, alert  | oater, orate, roate  
+    | 2nd  | sonic, scion         | lysin                
+    | 2nd  | pudgy                | chump :)         
+    
 2. **First Word - Right Character in Right Position**: ideal if you’d like to start the game using words that have the highest likelihood of having the right characters in the right position. This would yield the most number of green characters.
 
-| Rank |    Solution (& Usable) Words    |
-| ---- | ------------------------------- |
-| 1st | slate                           |
-| 2nd | crony                           |
-| 2nd | build                           |
+    | Rank | Solution (& Usable) Words |
+    | ---- | ------------------------- |
+    | 1st | slate                      |
+    | 2nd | crony                      |
+    | 2nd | build                      |
 
 Note on solution word vs. usable words. Wordle has two sets of words, solution words and other words. Other words are never the correct answer but can be used as a guess. There’s a chance that other words can be used to get a lot of yellows, despite never being the correct answer. So I created a list of usable words that combined the solution words and the other words. Notice that the **First Word - Common Characters** strategy has two lists. That’s because there are other words like “oater” that are more likely to produce yellows than the best solution word “later”. This isn’t the case for the **First Word - Right Character in Right Position**, as it produces the same results for both sets of words.
 
