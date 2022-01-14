@@ -10,6 +10,10 @@ Recently I came across some interesting behavior in Microsoft Word. While scroll
 
 ![word_mouse_cursor_flip_only.mov]()
  
+
+https://user-images.githubusercontent.com/6284187/149540340-c1fb54ee-dc7d-4a50-8fa3-8007e27cbf96.mov
+
+
 The pointer starts out as a normal arrow pointer then changes to a horizontal I beam pointer once the Word application is brought into focus by clicking. As the pointer travels left the pointer switches to a flipped arrow pointer. Traveling to the right we see the horizontal I beam pointer and eventually the normally expected classic arrow pointer. What the #$@!%?
 
 It took me a while to figure this out, because googling “flipped reversed pointer cursor” primarily gives you stuff pertaining to mouse scrolling direction. But I eventually happened across a helpful StackExchange discussion. [2]  Apparently, this is meant to be a useful feature for users. If you click when the pointer is in the flipped configuration Word will highlight the corresponding line of text, see example video below:
