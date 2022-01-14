@@ -80,7 +80,7 @@ We then search through all words and calculate their total word coverage. This i
 
 Code can be found in the [first_word_common_characters.ipynb](first_word_common_characters.ipynb) notebook.
 
-First Word - Right Character in Right Position
+### First Word - Right Character in Right Position
 This one is a pretty straightforward extension of the First Word - Common Characters approach that has an added constraint, which is position must be tracked along with the characters.
 
 To do this we count a character-position tuples. For every word we loop through the characters and their positions. We keep track of the number of times a character-position is observed. For example, the world “savvy” would increment the counts for the following character-portion tuples: (s, 1), (a, 2), (v, 3), (v, 4), (y, 5). These counts represent the number of words covered by a character-tuple (word coverage).
@@ -99,19 +99,19 @@ The **Gameplay** strategies are a little more complicated than the **First Word*
 This approach is reminds me of an AI TA I had. He would always say “AI is just search”. Which is true. This approach is pretty much searching over the word list with some filtering and using some distributional knowledge. It was surprised at how easily it came together and how effective it is. As a side note, it was probably the easiest application of regex that I’ve had in a while.
 
 There are three components to this approach:
-Generate Regex: build the search filter
-Get possible solutions: apply filter to the word list
-Rank order solutions: apply common character counting on the filtered word list
+1. **Generate Regex**: build the search filter
+2. **Get possible solutions**: apply filter to the word list
+3. **Rank order solutions**: apply common character counting on the filtered word list
 
 I will briefly detail some of the intricacies of these components.
 
-Generate Regex: the users need to provide 3 things before a guess 1) a string with the green characters positioned correctly and wildcards (*) elsewhere, 2) a list of the yellow characters found thus far, and finally 3) a list of the gray characters. Using this information we build a regular expression that describes the structure of the word we are looking for. For example let’s say we had **ery as green letters and every character other than q and u were greyed out then we would have a regex search pattern as follows: [qu][qu]ery.
+**Generate Regex**: the users need to provide 3 things before a guess 1) a string with the green characters positioned correctly and wildcards (*) elsewhere, 2) a list of the yellow characters found thus far, and finally 3) a list of the gray characters. Using this information we build a regular expression that describes the structure of the word we are looking for. For example let’s say we had **ery as green letters and every character other than q and u were greyed out then we would have a regex search pattern as follows: [qu][qu]ery.
 
-Get possible solutions: after building the regex search string we can loop through the list of solution words and filter all the words that don’t meet the regex search pattern. We can additionally remove any words that do not use characters from the yellow characters list. Finally, we then Rank Order Solutions by finding each words coverage using the approach described in Common Characters above. This produces a list of words ranked by their likelihood of producing yellow characters on the remaining possible words.
+**Get possible solutions**: after building the regex search string we can loop through the list of solution words and filter all the words that don’t meet the regex search pattern. We can additionally remove any words that do not use characters from the yellow characters list. Finally, we then Rank Order Solutions by finding each words coverage using the approach described in **Common Characters** above. This produces a list of words ranked by their likelihood of producing yellow characters on the remaining possible words.
 
 Code can be found in the [gameplay_refine_list_common_characters.ipynb](gameplay_refine_list_common_characters.ipynb) notebook. [There’s also a website with this solver implemented](gameplay_refined_list.html).
 
-Gameplay - Reinforcement Learning
+### Gameplay - Reinforcement Learning
 This approach is based on tabular Q-learning. [2, 5] Its a little bit complicated and I’m unsure the training procedure produced ideal results. But I’ll provide a brief overview.
 
 Reinforcement learning seeks to learn the right action to take in a given state. [6] You can use it to learn how to play games if you can formulate that game as a series of states (e.g., representing a board position) and actions (potential moves to take). [5] In order to convert tackle the wordle task with RL we need a way to represent the guesses that we’ve already done (state) and the next guess we should make (action).
