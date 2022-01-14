@@ -45,7 +45,7 @@ Erkin  <br />
 [Go ÖN Home](../../index.md) <br /><br />
 
 
-Note: the discrepancy in verbiage between the title and the text. Mouse cursor and pointer seem to be interchangeable when referring to the “pointy thing”. [4] I use pointer through the text as that’s what Apple’s human interface guidelines call it. [1] But the codebase refers to NSCursor, so ¯\\\_(ツ)\_/¯.
+Note: the discrepancy in verbiage between the title and the text. Mouse cursor and pointer seem to be interchangeable when referring to the “pointy thing”. [4] I use pointer through the text as that’s what Apple’s human interface guidelines call it. [1] But the codebase refers to NSCursor, so 🤷🏾‍♂️.
 
 Note 2: below are the versions of the software I was using.
 MacOS: 12.0.1 (21A559)
