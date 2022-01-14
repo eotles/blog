@@ -63,6 +63,8 @@ The reinforcement learning based approach would operate in a similar manner for 
 As I mentioned above, solving wordle is subjective. You might not like my approaches or might think there are ways for them to be improved. Luckily I’m not the only one thinking about this problem. [3, 4]
 
 
+Erkin  <br />
+[Go ÖN Home](../../index.md) <br /><br />
 
 
 
