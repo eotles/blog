@@ -10,8 +10,8 @@ Let’s talk about Wordle. [1] You, like me, might have been drawn into this gam
 
 <p align="center">
  <img width="359" alt="20220110_wordle" src="https://user-images.githubusercontent.com/6284187/149547716-54872019-49ed-42df-9493-692ed60b8b01.png"> <br />
-</p>
  A valiant wordle attempt by J.B. Cheadle (January 10th 2022)
+</p>
 
 It’s pretty fun to play, although wracking your brain for 5 letter words can be annoying, especially since you are not allowed to guess words that aren’t real words (e.g., you can’t use AEIOU). Once I got the hang of the game’s mechanics my natural inclination was to not enjoy the once daily word guessing diversion, but was to find a way to “solve wordle”.
 
