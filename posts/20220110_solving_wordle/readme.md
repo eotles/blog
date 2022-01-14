@@ -9,7 +9,8 @@ Topics: Wordle, Decision Science, Operations Research, Optimization, Games, Arti
 Let’s talk about Wordle. [1] You, like me, might have been drawn into this game recently, courtesy of those yellow and green squares on twitter. The rules are simple, you get 6 attempts to guess the 5 letter word. After every attempt you get feedback in the form of the colored squares around your letters. Grey means this character isn’t used at all. Yellow means that the character is used, but in a different position. Finally, green means you nailed the character to (one of) the right position(s). Here’s an example of a played game:
 
 <p align="center">
- <img width="359" alt="20220110_wordle" src="https://user-images.githubusercontent.com/6284187/149547716-54872019-49ed-42df-9493-692ed60b8b01.png"> <br />
+ <img width="742" alt="20220110_wordle_cheadle" src="https://user-images.githubusercontent.com/6284187/149555509-aea14cbb-5b02-45c4-b7d3-3d6c450dd4fb.png"> <br />
+
  A valiant wordle attempt by J.B. Cheadle (January 10th 2022)
 </p>
 
