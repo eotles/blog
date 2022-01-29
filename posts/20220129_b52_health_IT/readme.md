@@ -34,6 +34,7 @@ This is a question that can be asked of healthcare IT as easily as it can be ask
 Youtube video embedded below:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/02_geGISTLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br />
 
 
 Erkin  <br />
