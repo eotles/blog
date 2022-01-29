@@ -1,4 +1,5 @@
 # All Posts
+* [What Can Healthcare IT Learn From the B52? (01/29/2022)](20220129_b52_healthcare_it/readme.md)
 * [Looking for Data (01/24/2022)](20220124_looking_for_data/readme.md)
 * [Plutonium Pacemakers (01/17/2022)](20220117_plutonium_pacemakers/readme.md)
 * [$@!% Flipping Cursor! (01/14/2022)](20220114_mouse_cursor_flip/readme.md)
