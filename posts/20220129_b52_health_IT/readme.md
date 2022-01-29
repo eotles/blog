@@ -21,7 +21,7 @@ Look at how many engines there are. Four pairs of small jet engines, for a total
 
 This underscores a concept that is not discussed widely enough in healthcare IT circles:
 
-Your choices for tomorrow are ultimately constrained by what you designed yesterday.
+> Your choices for tomorrow are ultimately constrained by what you designed yesterday.
 
 The jet engine technology of the 1950s ultimately informed how the rest of the B-52 was designed. The references go into more detail, but if you were to re-engine the B-52 with a smaller number of more powerful engines you would have to totally redesign other parts of the plane. For example the rudder, wings, and control systems would have to totally be redesigned. Doing that might mean that you’d have to rethink the fuselage as well. You would be better off designing a new airplane from the ground up. So the choice becomes maintain with significant constraints or totally redo.
 
