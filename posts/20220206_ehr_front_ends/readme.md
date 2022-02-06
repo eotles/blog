@@ -48,10 +48,11 @@ What of Jacob’s issue? Well it turns out it was a Citrix Receiver issue. As a 
 
 When Jacob told me about the fix and how it involved changing a Citrix Receiver setting I kicked myself. Its the one part of the system I would never think to check. It was a good reminder that there’s a lot of complexity built into every part of the system that serves our patient records. While I spend most of my time thinking about other parts of the EHR this bug was a good reminder to not forget about the humble client.
 
-Erkin
+Erkin  <br />
+[Go ÖN Home](../../index.md)
 
 ## Acknowledgements
-I’d like to thank (John Cheadle)[https://www.linkedin.com/in/john-cheadle-59774339] and (River Karl)[https://www.linkedin.com/in/river-karl-7b5a4349] for reviewing this work prior. 
+I’d like to thank [John Cheadle](https://www.linkedin.com/in/john-cheadle-59774339) and [River Karl](https://www.linkedin.com/in/river-karl-7b5a4349) for reviewing this work prior its posting. 
 
 ## Bibliography
 1.	Frontend and backend - Wikipedia. 2022; Available from: https://en.wikipedia.org/wiki/Frontend_and_backend.
