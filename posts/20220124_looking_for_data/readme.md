@@ -1,6 +1,7 @@
 # Looking for Data
 [Erkin Ötleş](https://eotles.github.io) <br />
-January 24th 2022
+January 24th 2022 <br />
+Updated February 16th 2022
 
 Topics: Healthcare, data, data science, machine learning, operations research, nurse call light system <br />
 [PDF Version](looking_for_data.pdf)
@@ -8,6 +9,10 @@ Topics: Healthcare, data, data science, machine learning, operations research, n
 One of the nice things about being an MD-PhD student at a research institution with a large academic medical center is that you tend to have a lot of support when it comes to working on your biomedical research questions. Despite institutional support, data can be a challenge and finding the right data for your question depends a lot on your connections with the myriad various data systems and data-gate-keepers that exist in your academic environment. Having done this data sleuthing for a decade plus I have bit of experience in ferreting out interesting sources of healthcare data.
 
 One of my favorite data finds of all time was from a project I led when I was just starting out as quality improvement engineering for a hospital. I had been tasked with redesigning the inpatient rooms of the academic medical center I was working for. A significant portion of the project was blue-sky/brainstorming type engineering. But there was a portion of the project that involved troubleshooting the layout of an existing unit that had been receiving lots of complaints from nurses and CRNAs.
+
+In order to benchmark the current unit and to help inform planned changes we needed to understand the flow of work done by the nursing staff. Our typical approach for this type of data collection was to collect spaghetti diagrams. A spaghetti diagram is a simple, but effective, chart that maps the travel path of a person or an object over a given duration. [1] When complete the travel path looks like a plate of spaghetti has been spilled on a floor plan. Making spaghetti diagrams is a time consuming process, as you need an observer to track the target person (in our case nurses or CRNAs) for long periods of time. After drawing the short-straw I found myself on the night shift shadowing the superb night team of the unit.
+
+![image](https://user-images.githubusercontent.com/6284187/154292276-1fd7446e-0688-4955-b936-f28cd727e745.png)
 
 In order to benchmark the current unit and to help inform planned changes we needed to understand the flow of work done by the nursing staff. Our typical approach for this type of data collection was to collect spaghetti diagrams. A spaghetti diagram is a simple, but effective, chart that maps the travel path of a person or an object over a given duration. [1] When complete the travel path looks like a plate of spaghetti has been spilled on a floor plan. Making spaghetti diagrams is a time consuming process, as you need an observer to track the target person (in our case nurses or CRNAs) for long periods of time. After drawing the short-straw I found myself on the night shift shadowing the superb night team of the unit.
 
