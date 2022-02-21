@@ -11,6 +11,7 @@ Erkin  <br />
 
 
 ## Recent Posts
+* [Why Doctors Should Contact Tech Support](/posts/20220221_call_tech_support/readme.md)
 * [Bigger Needle Smaller Number (02/15/2022)](/posts/20220215_needle_gauges/readme.md)
 * [Complicated Way You See Patient Data: EHR Front-Ends (02/06/2022)](/posts/20220206_ehr_front_ends/readme.md)
 * [What Can Healthcare IT Learn From the B52? (01/29/2022)](/posts/20220129_b52_health_IT/readme.md)
