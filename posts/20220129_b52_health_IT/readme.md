@@ -8,16 +8,13 @@ Topics: Healthcare Information Technology, Maintenance, Upgrades, B-52, Technica
 
 A lot of aviation videos show up on my YouTube feed (thank you, [DarkAero](https://www.youtube.com/c/darkaeroinc) team). A video that popped up recently was about the Boeing B-52 Stratofortress (B-52) engine retrofit project. According to wikipedia the B-52 is a “long-range, subsonic, jet-powered strategic bomber” that has been used by the US Air Force since 1955. [1] Despite being designed and built 6 decades ago, the US Air Force still uses these planes and plans on using them well into the future. This desire to keep using them into the future is where things get interesting and we in healthcare IT can learn some lessons.
 
+![image](https://user-images.githubusercontent.com/6284187/151667024-47aad415-ee6e-4138-a166-f2a321d8d09f.png)
+
 As an aside, my personal belief is machines like this are pretty odious. I like machines, I like making physical things, and I like planes. But when the thing in question is expressly designed to kill people and destroy property, I start to have some problems. Obviously there’s a reason why these exist (and why they’ve been used) but I find their existence troubling and I wish we lived in a world where these types of machines did not have to exist.
 
 The upgrading of these planes is covered well by wikipedia, an Air Force Magazine article, and the original YouTube video that sparked my interest in the topic. [1-3] Basically, the last B-52 rolled off the assembly line in 1962 and the Air Force has been refurbishing the original engines as time has gone on. In order to keep the planes flying into the 2040s the US government has decided to order new engines for the existing planes. Note an emerging connection, both the US government and US healthcare organizations are loathe to let old technology die. We gotta squeeze all the usable life out of those faxing systems…
 
-New engines old plane, makes sense right? Sure, but take a look at the B-52, image below.
-
-![image](https://user-images.githubusercontent.com/6284187/151667024-47aad415-ee6e-4138-a166-f2a321d8d09f.png)
-
-
-Look at how many engines there are. Four pairs of small jet engines, for a total of 8 engines! Seems like we have an opportunity to cut down on the number of engines, right? Two turbofan jet engines is the standard for most modern commercial aircraft being delivered by Boeing or Airbus these days. Even if we didn’t go down to two we could go down to four easily. No need to change the number of mounting points! This is very logical, but it’s not truly feasible.  Why? Because of design decisions made 69 years ago. 
+New engines old plane, makes sense right? Sure, but take another glance at the B-52 (image above). Look at how many engines there are. Four pairs of small jet engines, for a total of 8 engines! Seems like we have an opportunity to cut down on the number of engines, right? Two turbofan jet engines is the standard for most modern commercial aircraft being delivered by Boeing or Airbus these days. Even if we didn’t go down to two we could go down to four easily. No need to change the number of mounting points! This is very logical, but it’s not truly feasible.  Why? Because of design decisions made 69 years ago. 
 
 This underscores a concept that is not discussed widely enough in healthcare IT circles:
 
