@@ -46,3 +46,5 @@ Erkin  <br />
 ## Bibliography
 1.	Mitchell, T.M., Machine Learning. McGraw-Hill series in computer science. 1997, New York: McGraw-Hill. xvii, 414 p.
 2.	Wong, A., et al., External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients. JAMA Internal Medicine, 2021.
+
+### Footnotes
