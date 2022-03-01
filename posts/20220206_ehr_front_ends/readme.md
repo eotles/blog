@@ -9,9 +9,6 @@ I have a love-hate relationship with electronic health records (EHRs). This rela
 
 I believe a significant subset of these issues actually stem from a general lack of communication between the engineering community making these tools and the medical community using them. One of my goals in pursuing the MD-PhD was to hopefully help bridge this gap a little bit. As such, I’m usually game to play tech support on the wards and I like explaining how the software we use works (or doesn’t). I also like translating what we do in medicine to the engineers that will listen. Basically I’ll talk to any crowd that will listen (maybe this is why I went into academia 🤔).
 
-<img width="1236" alt="image" src="https://user-images.githubusercontent.com/6284187/156213075-520ca090-c2f2-4c79-bf75-0113aff10824.png">
-*The complicated way we see patient data.*
-
 <figure class="image">
   <img src="https://user-images.githubusercontent.com/6284187/156213075-520ca090-c2f2-4c79-bf75-0113aff10824.png"
        alt="1236">
