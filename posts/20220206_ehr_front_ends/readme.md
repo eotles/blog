@@ -12,6 +12,13 @@ I believe a significant subset of these issues actually stem from a general lack
 <img width="1236" alt="image" src="https://user-images.githubusercontent.com/6284187/156213075-520ca090-c2f2-4c79-bf75-0113aff10824.png">
 *The complicated way we see patient data.*
 
+<figure class="image">
+  <img src="https://user-images.githubusercontent.com/6284187/156213075-520ca090-c2f2-4c79-bf75-0113aff10824.png"
+       alt="1236">
+  <figcaption>The complicated way we see patient data.</figcaption>
+</figure>
+
+
 This post is inspired by a tech support call I fielded from Jacob, one of my med school classmates. Jacob was about to take an overnight call shift and his computer was displaying the EHR in a manner that made the font so small it wasn’t readable. I walked through some potential settings in the EHR that could be affecting what he was seeing, but everything we tried came up short. Eventually Jacob texted his co-resident and they told him to try modifying a Citrix Receiver setting, which worked. My singular focus on the complexity inside of the EHR instead of the complexity AROUND the EHR led to my tech-support failure. The complexity around the EHR will be the focus of this blog post.
 
 Concurrently serving an EHR to thousands of physicians, nurses, and allied health professionals across health systems is a big task. This task, like most other software tasks that involve interacting with users, is broken into two big components, with a front-end and a back-end. [1] This is an over simplification, but the front-end is everything that a user interacts with and the back-end is all the other stuff that needs to exist in order to store and transmit data used by the front end. You’ve probably been the beneficiary of this division of labor even if you’ve never written any code. Twitter, Facebook, Youtube, and Gmail all use this approach.
