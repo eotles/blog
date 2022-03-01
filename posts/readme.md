@@ -1,5 +1,5 @@
 # All Posts
-* [Intro to Machine Learning for Physicians: Part I](20220301_intro_to_ml_part_i/readme.md)
+* [Intro to Machine Learning for Physicians: Part I (03/01/2022)](20220301_intro_to_ml_part_i/readme.md)
 * [Why Doctors Should Contact Tech Support (02/21/2022)](20220221_call_tech_support/readme.md)
 * [Bigger Needle Smaller Number (02/15/2022)](20220215_needle_gauges/readme.md)
 * [Complicated Way You See Patient Data: EHR Front-Ends (02/06/2022)](20220206_ehr_front_ends/readme.md)
