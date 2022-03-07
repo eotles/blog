@@ -14,7 +14,8 @@ Nominally this was a graduate project (holler at my HCI team[^1]) and the projec
 So I took the logical nextstep[^2] and built out a minimal viable prototype using Apple’s development tools. This allowed me to incorporate on-device transcription. [2, 3] On-device transcription is a really cool technology for healthcare IT! Because you don’t have information flowing off the device back to Apple’s (or someone else’s) servers, it could enable HIPAA compliant voice interfaces in the future. Making a prototype app also enabled me to build several other features, such as saving and retrieving notes. These features are necessary when testing out a more complicated record keeping system, like this.
 
 If you are interested in learning more about this prototype check out this video:
-If you would like to take a look at my hacky Swift code check out the Github project. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8buGn8nIWS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+If you would like to take a look at my hacky Swift code check out the [Github project](https://github.com/eotles/HCI). 
 
 One thing that I didn’t have time to code up was the sharing of notes between physicians. This is a pain point in systems that are actually in use. The team had some cool ideas about collaborative editing and version control. I think these would be super useful from both a clinical perspective (making the sharing, editing, and co-signing easier) and also from a technical perspective. However that would involve a significant amount of back-end development (see: ***) so it remains an item todo.
 
@@ -34,6 +35,6 @@ I’d like to thank the team: Sarah Jabbour, Meera Krishnamoorthy, Barbara Koryc
 3.	Recognizing Speech in Live Audio | Apple Developer Documentation. 2022; Available from: https://developer.apple.com/documentation/speech/recognizing_speech_in_live_audio.
 4.	SwiftUI Tutorials | Apple Developer Documentation. 2022; Available from: https://developer.apple.com/tutorials/swiftui.
 
-## Footnotes
+### Footnotes
 [^1]: Sarah Jabbour, Meera Krishnamoorthy, Barbara Korycki, and Harry Rubin-Falcone
 [^2]: kudos if you got the joke
