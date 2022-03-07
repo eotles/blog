@@ -15,7 +15,7 @@ So I took the logical nextstep[^2] and built out a minimal viable prototype usin
 
 If you are interested in learning more about this prototype check out this video:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8buGn8nIWS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-If you would like to take a look at my hacky Swift code check out the [Github project](https://github.com/eotles/HCI). 
+If you would like to take a look at my hacky Swift code check out the [Github project](https://github.com/eotles/HCI). <br />
 
 One thing that I didn’t have time to code up was the sharing of notes between physicians. This is a pain point in systems that are actually in use. The team had some cool ideas about collaborative editing and version control. I think these would be super useful from both a clinical perspective (making the sharing, editing, and co-signing easier) and also from a technical perspective. However that would involve a significant amount of back-end development (see: ***) so it remains an item todo.
 
