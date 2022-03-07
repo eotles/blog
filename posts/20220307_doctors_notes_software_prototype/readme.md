@@ -17,7 +17,7 @@ If you are interested in learning more about this prototype check out this video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8buGn8nIWS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 If you would like to take a look at my hacky Swift code check out the [Github project](https://github.com/eotles/HCI). <br />
 
-One thing that I didn’t have time to code up was the sharing of notes between physicians. This is a pain point in systems that are actually in use. The team had some cool ideas about collaborative editing and version control. I think these would be super useful from both a clinical perspective (making the sharing, editing, and co-signing easier) and also from a technical perspective. However that would involve a significant amount of back-end development (see: ***) so it remains an item todo.
+One thing that I didn’t have time to code up was the sharing of notes between physicians. This is a pain point in systems that are actually in use. The team had some cool ideas about collaborative editing and version control. I think these would be super useful from both a clinical perspective (making the sharing, editing, and co-signing easier) and also from a technical perspective. However that would involve a significant amount of back-end development (see: [Complicated Way You See Patient Data: EHR Front-Ends](https://eotles.github.io/blog/posts/20220206_ehr_front_ends/))) so it remains an item todo.
 
 One of my mantras is that there’s a lot of work to be done in healthcare IT. Developing prototypes and testing them out can help us advance the state of the field. Rapidly prototyping these systems is hard to do, but it could pay dividends in terms of physician happiness and productivity.
 
@@ -27,7 +27,7 @@ Erkin
 Although I’ve made a couple other apps using Xcode and Swift this was my first time using SwiftUI, which was a pretty slick experience.[4] I really enjoyed programmatically creating the interface and not having to toggle back and forth between my view controller code and the Interface Builder.
 
 ## Acknowledgements
-I’d like to thank the team: Sarah Jabbour, Meera Krishnamoorthy, Barbara Korycki, and Harry Rubin-Falcone. Making wireframes with you guys was an absolute joy.
+I’d like to thank the team: [Sarah Jabbour](https://sjabbour.github.io), [Meera Krishnamoorthy](http://meera.krishnamoorthy.com), [Barbara Korycki](https://www.linkedin.com/in/barbara-korycki-19568810a/), and [Harry Rubin-Falcone](https://www.linkedin.com/in/harry-rubin-falcone-a6543960/). Making wireframes with you guys was an absolute joy.
 
 ## Bibliography
 1.	Prototype | InVision. 2022; Available from: https://www.invisionapp.com/defined/prototype.
