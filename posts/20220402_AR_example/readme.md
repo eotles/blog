@@ -2,7 +2,7 @@
 [Erkin Ötleş](https://eotles.github.io) <br />
 April 2nd 2022
 
-Topics: augmented reality, extended reality, mixed reality, virtual realitybr />
+Topics: augmented reality, extended reality, mixed reality, virtual reality<br />
 [PDF Version](intro_to_ml_part_i.pdf)
 
 
