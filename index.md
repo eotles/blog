@@ -11,6 +11,7 @@ Erkin  <br />
 
 
 ## Recent Posts
+* [Augmented Reality Demo (04/02/2022)](/posts/20220402_AR_example/readme.md)
 * [Doctor's Notes Software Prototype (03/07/2022)](/posts/20220307_doctors_notes_software_prototype/readme.md)
 * [Intro to Machine Learning for Physicians: Part I (03/01/2022)](/posts/20220301_intro_to_ml_part_i/readme.md)
 * [Why Doctors Should Contact Tech Support (02/21/2022)](/posts/20220221_call_tech_support/readme.md)
