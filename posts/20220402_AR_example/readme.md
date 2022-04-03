@@ -1,4 +1,4 @@
-# Augmented Reality Demo
+# [Augmented Reality Demo](https://github.com/eotles/blog/blob/gh-pages/posts/20220402_AR_example/toy_biplane.usdz?raw=true)
 [Erkin Ötleş](https://eotles.github.io) <br />
 April 2nd 2022
 
